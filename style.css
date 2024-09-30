@@ -50,6 +50,19 @@ a {
 
 .navegacion__elemento a {
     font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.presentacion__foto{
+    border-radius: 5px;
+    height:23rem;
+    width: 23rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
 
