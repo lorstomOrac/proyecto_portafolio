@@ -6,6 +6,8 @@ invitamos a personalizarlo según tu estilo y preferencias no te limites apenas 
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --color-primario: #e67e22; 
+    --color-secundario: #f39c12;
 }
 
 body {
@@ -46,42 +48,231 @@ a {
 
 .navegacion__lista {
     display: none;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .navegacion__elemento a {
-    font-size: 0.9rem;
-    display: flex;
-    align-items: flex-start;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease;
 }
+
+.navegacion__elemento a:hover {
+    color: #3498db;
+}
+
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
 
 .presentacion{
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 3.12rem;
+    padding: 2rem;
+    background-color: #fafafa;
+    
     
 }
 .presentacion__foto{
     border-radius: 50%;
     height:20rem;
     width: 20rem;
+    object-fit: cover;
+    margin-right: 2rem;
+    
 }
-/* ------------------------------ Sección Presentación ------------------------------*/
 
+.presentacion__contenedor{
+    max-width: 600px;
+    
+}
+
+.presentacion__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.presentacion__subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes__img {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #000;
+}
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
+.sobre-mi {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.sobre-mi__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-mi__texto {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
 
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidades__icono {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.habilidades__nombre {
+    font-size: 1.1rem;
+}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
 
+.aficiones__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+}
+
+.aficiones__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+.aficiones__elemento {
+    text-align: center;
+}
+
+.aficiones__icono {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.aficiones__nombre {
+    font-size: 1.2rem;
+    color: #333;
+}
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+}
 
+.proyectos__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+}
+
+.proyectos__contenedor {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.proyectos__nombre {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-secundario);
+}
+
+.proyectos__descripcion {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
+.contacto {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
 
+.contacto__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primario);
+}
+
+.contacto__formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto__campo {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contacto__campo--textarea {
+    height: 150px;
+}
+
+.contacto__boton {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto__boton:hover {
+    background-color: #27ae60;
+}
 /* ------------------------------ Responsividad ---------------------------------------*/
 
 /* Tablets y pantallas más grandes */
