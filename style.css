@@ -60,9 +60,9 @@ a {
     
 }
 .presentacion__foto{
-    border-radius: 5px;
-    height:23rem;
-    width: 23rem;
+    border-radius: 50%;
+    height:20rem;
+    width: 20rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
 
