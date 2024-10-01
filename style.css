@@ -227,6 +227,23 @@ a {
     line-height: 1.6;
 }
 
+/*.formacion{
+    display: flex;
+    align-items: baseline;
+}*/
+
+.formacion__titulo{
+    display: flex;
+    justify-content: center;
+}
+.formacion__elemento{
+    display: flex;
+    align-items: baseline;
+}
+.formacion__icono{
+    display: flex;
+    align-content: space-between;
+}
 /*------------------------------ Sección de Contacto ---------------------------------*/
 
 .contacto {
